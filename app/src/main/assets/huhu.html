@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试结果的信息</title>
+    <meta name="author" content="Yanyuetian">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta property="og:site_name" content="书呆子精神院"/>
+    <!--<script src="file:///android_asset/zepto.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+    function  postStr(){
+       var   papa1 =  document.getElementById("text").value;
+       var   papa2 =  document.getElementById("text1").value;
+       document.getElementById("text2").value=android.getResult(papa1, papa2);
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+
+        <p>
+
+        <div id="info">向Android传递两个实参，并取得返回值</div>
+        </p>
+        <p><input type="text" id="text" value="实参一"/></p>
+
+        <p><input type="text" id="text1" value="实参二"/></p>
+
+        <p><input type="text" id="text2" value="返回值"/></p>
+
+        <p><input type="button" id="btn_post" onclick="postStr()" value="发送消息至android"/>
+
+
+</body>
+
+
+</html>
